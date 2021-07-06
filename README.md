@@ -1,7 +1,7 @@
 <h2 align="center">BEAR: Bilinear neural network for Efficient Approximation of RPCA</h2>
 
 <p align="center">
-<img width="65%" src="src/confocal_demo.gif">
+<img width="65%" src="src/confocal_demo_compressed.gif">
 </p>
 <h6 align="center">Demo video acquired using BEAR. Input video, low-rank component, and sparse component from left to right. 
   
