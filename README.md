@@ -21,12 +21,7 @@ Just download or clone this repository and use the code below.
 python scripts/run_BEAR.py --D hall --d True
 ```
 
-Below results will be saved in `results/BEAR/hall_(Y/L/S)` directory.
-
-|Y|L|S|
-|--|--|--|
-|<img src="./src/hall_Y.gif">|<img src="./src/hall_L.gif">|<img src="./src/hall_S.gif">|
-
+Results will be saved in `results/BEAR/hall_(Y/L/S)` directory.
 
 ## Hardware specification & Requirements
 
