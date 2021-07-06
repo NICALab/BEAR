@@ -3,7 +3,9 @@
 <p align="center">
 <img width="65%" src="src/confocal_demo.gif">
 </p>
-<h6 align="center">Demo video acquired using BEAR. This data is not included in the paper and this repository.</h6>
+<h6 align="center">Demo video acquired using BEAR. Input video, low-rank component, and sparse component from left to right. 
+  
+  This data is not included in the paper and this repository.</h6>
 
 Official source codes for "Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data", MICCAI 2021.
 
