@@ -31,6 +31,7 @@ Results will be saved in `results/BEAR/hall_(Y/L/S)` directory.
 **Hardware specification**
 
 ```markdown
+OS : Ubuntu 18.0.4
 CPU : Intel Xeon Silver 4214 CPU @ 2.20GHz
 GPU : GeForce RTX 2080 Ti 11GB
 RAM : 128GM
