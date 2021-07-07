@@ -50,7 +50,10 @@ mat73==0.46
 
 ## Reproduce the paper
 
-First of all, calcium imaging data we have used in paper is in this [Google Drive](https://drive.google.com/file/d/115lCnwIVU0TtKedQ_31FDaOG8wksGmG9/view?usp=sharing). Download, unzip, and move .tif and .mat files inside the data folder. We have already added small surveillance video which is widely used in RPCA paper. You can also try it.
+We have already added small surveillance video, and calcium imaging data of mouse which are widely used in RPCA paper.
+You can first try these data.
+Calcium imaging data of zebrafish we have used in paper is in this [Google Drive](https://drive.google.com/file/d/115lCnwIVU0TtKedQ_31FDaOG8wksGmG9/view?usp=sharing) (~10GB).
+Download, unzip, and move .tif and .mat files inside the data folder. 
 
 1. Figure 3. Phase diagram.
 ```bash
