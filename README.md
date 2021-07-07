@@ -58,8 +58,8 @@ python scripts/phase_diagram.py --D None --d None
 
 2. Table 1. and Figure 4. Decomposition of the zebrafish caclium imaging data.
 ```bash
-python scripts/run_Greedy_BEAR.py --D zebrafish_150 --d True (For 150 length video)
-python scripts/run_Greedy_BEAR.py --D zebrafish_1000 --d True (For 1000 length video)
+python scripts/run_Greedy_BEAR.py --D zebrafish_150 --d True
+python scripts/run_Greedy_BEAR.py --D zebrafish_1000 --d True
 ```
 Due to the size of data, loading files itself does take long time. (Minutes in HDD)
 And for 1000 length video, about 100GB of RAM is required.
