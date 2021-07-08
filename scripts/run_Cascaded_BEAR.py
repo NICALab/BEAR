@@ -48,13 +48,11 @@ def run(args):
             args.device = 'cuda:0'
             
             # For cascaded BEAR
-            args.sparsity = 2
+            args.sparsity = 3
 
     elif dataset == "spinning_confocal":
         path = "./data/test004_EMCCD_1xbin_gcamp6s_nls_25x_tseries_5dpf.tif"
         Y = torch.from_numpy(skio.imread(path).astype(float)).float().permute(1, 2, 0)
-        # Y = Y[0:500, 0:500, 50:550]
-
         print(Y.size())
         Y /= Y.max()
         data_shape = list(Y.size())
@@ -79,14 +77,14 @@ def run(args):
 
     if not os.path.exists("./results"):
         os.mkdir("./results")
-    if not os.path.exists("./results/E2E_BEAR"):
-        os.mkdir("./results/E2E_BEAR")
-    if not os.path.exists(f"./results/E2E_BEAR/{dataset}"):
-        os.mkdir(f"./results/E2E_BEAR/{dataset}")
+    if not os.path.exists("./results/Cascaded_BEAR"):
+        os.mkdir("./results/Cascaded_BEAR")
+    if not os.path.exists(f"./results/Cascaded_BEAR/{dataset}"):
+        os.mkdir(f"./results/Cascaded_BEAR/{dataset}")
 
-    imsave(f"./results/E2E_BEAR/{dataset}/Y.tif", Y.permute(2, 0, 1).cpu().numpy())
-    imsave(f"./results/E2E_BEAR/{dataset}/L.tif", L.permute(2, 0, 1).cpu().numpy())
-    imsave(f"./results/E2E_BEAR/{dataset}/S.tif", S.permute(2, 0, 1).cpu().numpy())
+    imsave(f"./results/Cascaded_BEAR/{dataset}/Y.tif", Y.permute(2, 0, 1).cpu().numpy())
+    imsave(f"./results/Cascaded_BEAR/{dataset}/L.tif", L.permute(2, 0, 1).cpu().numpy())
+    imsave(f"./results/Cascaded_BEAR/{dataset}/S.tif", S.permute(2, 0, 1).cpu().numpy())
 
     with torch.no_grad():
         second_model = second_model.cpu()
@@ -100,10 +98,10 @@ def run(args):
         temporal_sig = temporal_sig_res.permute(1, 0)
         print(spatial_mask.size(), temporal_sig.size())
 
-        imsave(f"./results/E2E_BEAR/{dataset}/spatial_footprints.tif", spatial_mask.cpu().detach().numpy())
+        imsave(f"./results/Cascaded_BEAR/{dataset}/spatial_footprints.tif", spatial_mask.cpu().detach().numpy())
 
-        # torch.save(temporal_sig, f"./results/E2E_BEAR/{dataset}/temporal_footprints.pt")
-        imsave(f"./results/E2E_BEAR/{dataset}/temporal_footprints.tif", temporal_sig.cpu().numpy())
+        # torch.save(temporal_sig, f"./results/Cascaded_BEAR/{dataset}/temporal_footprints.pt")
+        imsave(f"./results/Cascaded_BEAR/{dataset}/temporal_footprints.tif", temporal_sig.cpu().numpy())
 
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@ class BEAR_WWTY(nn.Module):
 
     def clamper(self):
         for p in self.parameters():
-            p.data.clamp_(1e-10)
+            p.data.clamp_(0.0)
 
 
 class BEAR_ABY(nn.Module):
@@ -43,4 +43,4 @@ class BEAR_ABY(nn.Module):
 
     def clamper(self):
         for p in self.parameters():
-            p.data.clamp_(1e-10)
+            p.data.clamp_(0.0)
