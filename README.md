@@ -77,4 +77,12 @@ For accuracy, number of epochs in default settings of Cascaded BEAR is very larg
 Can be observed that loss value does not decrease actually after small number of epochs.
 You can reduce the `args.epoch` if you want.
 
-
+## Citation
+```markdown
+@inproceedings{han2021bear,
+  title={Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data},
+  author={Seungjae Han and Eun-Seo Cho and Inkyu Park and Kijung Shin and Young-Gyu Yoon},
+  booktitle={International Conference on Medical Image Computing and Computer Assisted Intervention},
+  year={2021}
+}
+```
