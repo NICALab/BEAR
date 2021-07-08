@@ -65,7 +65,7 @@ python scripts/phase_diagram.py --D None --d None
 python scripts/run_Greedy_BEAR.py --D zebrafish_150 --d True
 python scripts/run_Greedy_BEAR.py --D zebrafish_1000 --d True
 ```
-Due to the size of data, loading files itself does take long time. (Minutes in HDD)
+Due to the size of data, loading files itself does take long time (Minutes in HDD).
 And for 1000 length video, about 100GB of RAM is required.
 
 3. Figure 5. and Figure 6. Cascaded BEAR for analysis of neuronal activity.
@@ -73,7 +73,7 @@ And for 1000 length video, about 100GB of RAM is required.
 python scripts/run_Cascaded_BEAR.py --D demoMovie --d True
 python scripts/run_Cascaded_BEAR.py --D spinning_confocal --d True
 ```
-For accuracy and for safety, number of epochs in default settings of Cascaded BEAR is large.
+For accuracy, number of epochs in default settings of Cascaded BEAR is very large.
 Can be observed that loss value does not decrease actually after small number of epochs.
 You can reduce the `args.epoch` if you want.
 
