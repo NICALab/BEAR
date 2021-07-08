@@ -79,7 +79,7 @@ You can reduce the `args.epoch` if you want.
 
 ## Citation
 ```markdown
-@inproceedings{han2021bear,
+@inproceedings{han2021efficient,
   title={Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data},
   author={Seungjae Han and Eun-Seo Cho and Inkyu Park and Kijung Shin and Young-Gyu Yoon},
   booktitle={International Conference on Medical Image Computing and Computer Assisted Intervention},
