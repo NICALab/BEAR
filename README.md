@@ -7,7 +7,7 @@
   
   This data is not included in the paper and this repository.</h6>
 
-Official source codes for "Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data", arxiv.
+Official source codes for "Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data", arXiv.
 
 Source codes for PCP, IALM, and GreGoDec are from [lrslibrary](https://github.com/andrewssobral/lrslibrary).
 Source codes for OMWRPCA are from [onlineRPCA](https://github.com/wxiao0421/onlineRPCA/blob/master/rpca/omwrpca.py).
