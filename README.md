@@ -78,5 +78,11 @@ Can be observed that loss value does not decrease actually after small number of
 You can reduce the `args.epoch` if you want.
 
 ## Citation
-**Currently accepted, not yet published**
-
+```markdown
+@article{han2021efficient,
+  title={Efficient Neural Network Approximation of Robust PCA for Automated Analysis of Calcium Imaging Data},
+  author={Han, Seungjae and Cho, Eun-Seo and Park, Inkyu and Shin, Kijung and Yoon, Young-Gyu},
+  journal={arXiv},
+  year={2021},
+}
+```
