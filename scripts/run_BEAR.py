@@ -63,6 +63,40 @@ def run(args):
             args.batch_size = 512
             args.device = 'cuda:0'
 
+    elif dataset == "confocal_zebrafish":
+        path = "./data/confocal_zebrafish.tif"
+        Y = torch.from_numpy(skio.imread(path).astype(float)).float().permute(1, 2, 0)
+        print(Y.size())
+        data_shape = list(Y.size())
+        Y_res = Y.reshape(np.prod(data_shape[0:2]), data_shape[2]).permute(1, 0)
+
+        if default:
+            print("Set to default setting!")
+            args.lr = 1e-3
+            args.epoch = 80
+            args.rank = 2
+            args.batch_size = 60
+            args.device = 'cuda:0'
+            args.constrain_S = 'P'
+            args.alpha = 1e3
+
+    elif dataset == "confocal_zebrafish_2":
+        path = "./data/confocal_zebrafish_2.tif"
+        Y = torch.from_numpy(skio.imread(path).astype(float)).float().permute(1, 2, 0)
+        print(Y.size())
+        data_shape = list(Y.size())
+        Y_res = Y.reshape(np.prod(data_shape[0:2]), data_shape[2]).permute(1, 0)
+
+        if default:
+            print("Set to default setting!")
+            args.lr = 1e-3
+            args.epoch = 80
+            args.rank = 2
+            args.batch_size = 60
+            args.device = 'cuda:0'
+            args.constrain_S = 'P'
+            args.alpha = 1e3
+
     print(f"""
     START TIME : {_time.strftime("%Y-%m-%d %H:%M:%S", _time.localtime())}
     T_XY SHAPE : {Y_res.size()}
