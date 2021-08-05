@@ -51,7 +51,7 @@ def run(args):
             args.sparsity = 3
 
     elif dataset == "spinning_confocal":
-        path = "./data/test004_EMCCD_1xbin_gcamp6s_nls_25x_tseries_5dpf.tif"
+        path = "./data/nls_zebrafish.tif"
         Y = torch.from_numpy(skio.imread(path).astype(float)).float().permute(1, 2, 0)
         print(Y.size())
         Y /= Y.max()
