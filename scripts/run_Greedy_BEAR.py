@@ -36,7 +36,7 @@ def run(args):
     default = args.d
 
     if dataset == "zebrafish_150":
-        path = "./data/raw_201214_16XWI_casperGCaMP7a_S2_R2_0p5Hz_41planex150vol.mat"
+        path = "./data/zebrafish_150.mat"
         raw = mat73.loadmat(path, use_attrdict=True)["rawVideo"]
         Y = torch.from_numpy(np.float32(raw))  # [270, 480, 41, 150]
         Y /= Y.max()
@@ -56,7 +56,7 @@ def run(args):
             args.rank_step = 1
 
     elif dataset == "zebrafish_1000":
-        path = "./data/raw_201214_16XWI_casperGCaMP7a_S7_R1_2p49Hz_41planex1000vol.mat"
+        path = "./data/zebrafish_1000.mat"
         raw = mat73.loadmat(path, use_attrdict=True)["rawVideo"]
         Y = torch.from_numpy(np.float32(raw))
         del raw
