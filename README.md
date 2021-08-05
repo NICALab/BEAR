@@ -18,15 +18,15 @@ Source codes for OMWRPCA are from [onlineRPCA](https://github.com/wxiao0421/onli
 
 ## Running BEAR
 
-You can run BEAR which does Robust PCA by very simple code. Just download or clone this repository and use the scripts below.
+You can run BEAR by very simple code. Just download or clone this repository and use the scripts below.
 `--D` refers the name of the data and `--d` enables the default settings of several hyperparameters.
-
-We have already added two videos in `data` folder: small surveillance video, and calcium imaging data of mouse which are widely used in RPCA paper. You can first try with these data. You can try BEAR with as follows:
+There are already two videos in `data` folder: small surveillance video, and calcium imaging data of mouse which are widely used in RPCA paper. You can first try with these data. You can try BEAR with as follows:
 ```bash
+python scripts/run_BEAR.py --D hall --d True
 python scripts/run_BEAR.py --D demoMovie --d True
 ```
 
-Also you can download **additional** calcium imaging data of zebrafish in this [Google Drive](https://drive.google.com/file/d/1gQRJzk5rR5TRYc5O_zZDsuXRK6tAEBPZ/view?usp=sharing) (~25MB). Download, unzip, and move .tif and .mat files inside the `data` folder. Then, you can try BEAR with as follows:
+Also you can download **additional** calcium imaging data of zebrafish in this [Google Drive](https://drive.google.com/file/d/1gQRJzk5rR5TRYc5O_zZDsuXRK6tAEBPZ/view?usp=sharing) (~25MB). If you want to see more examples, try these. Download, unzip, and move .tif and .mat files inside the `data` folder. Then, you can try BEAR with as follows:
 ```bash
 python scripts/run_BEAR.py --D confocal_zebrafish --d True
 python scripts/run_BEAR.py --D confocal_zebrafish_2 --d True
