@@ -57,7 +57,7 @@ mat73==0.46
 
 ## Reproduce the paper
 
-Calcium imaging data of zebrafish we have used in paper is in this [Google Drive](https://drive.google.com/file/d/115lCnwIVU0TtKedQ_31FDaOG8wksGmG9/view?usp=sharing) (~10GB). They are large to show that BEAR is fast and scalable to use in large calcium imaging data.
+Calcium imaging data of zebrafish we have used in paper is in this [Google Drive](https://drive.google.com/file/d/115lCnwIVU0TtKedQ_31FDaOG8wksGmG9/view?usp=sharing) (~10GB). They are very large to show that BEAR is fast and scalable to use in large calcium imaging data.
 
 1. Figure 3. Phase diagram.
 ```bash
