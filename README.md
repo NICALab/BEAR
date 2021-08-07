@@ -1,11 +1,10 @@
 <h2 align="center">BEAR: Bilinear neural network for Efficient Approximation of RPCA</h2>
 
 <p align="center">
+<img width="65%" src="src/surveillance.gif">
 <img width="65%" src="src/confocal_demo_compressed.gif">
 </p>
-<h6 align="center">Demo video acquired using BEAR. Input video, low-rank component, and sparse component from left to right. 
-  
-  This data is not included in the paper and this repository.</h6>
+<h6 align="center">Demo videos acquired using BEAR. Input video, low-rank component, and sparse component from left to right.</h6>
 
 Official source codes for "Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data", [arXiv](https://arxiv.org/abs/2108.01665).
 
@@ -15,8 +14,16 @@ Source codes for PCP, IALM, and GreGoDec are from [lrslibrary](https://github.co
 Source codes for OMWRPCA are from [onlineRPCA](https://github.com/wxiao0421/onlineRPCA/blob/master/rpca/omwrpca.py).
 (Both last visited on March, 2021.)
 
+## Running BEAR (in jupyter notebook)
 
-## Running BEAR
+In `demo.ipynb` notebook, you can follow how to use BEAR for surveillance video. There is a video saved in this notebook, where they may not visible if you simply open the notebook in github. One way to view all things in the notebook is opening it with VS Code.
+
+Following is the visualization result in the notebook. You can see that low rank `L` and sparse `S` is well decomposed from input video `Y`.
+<p align="center">
+<img width="65%" src="src/demo_hall.gif">
+</p>
+
+## Running BEAR (in local)
 
 You can run BEAR by very simple code. Just download or clone this repository and use the scripts below.
 `--D` refers the name of the data and `--d` enables the default settings of several hyperparameters.
