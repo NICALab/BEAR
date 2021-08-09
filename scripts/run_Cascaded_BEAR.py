@@ -49,6 +49,7 @@ def run(args):
             
             # For cascaded BEAR
             args.sparsity = 3
+            args.k = 8
 
     elif dataset == "spinning_confocal":
         path = "./data/nls_zebrafish.tif"
@@ -67,6 +68,7 @@ def run(args):
 
             # For cascaded BEAR
             args.sparsity = 3
+            args.k = 8
 
     [L_res, S_res, total_loss, _, second_model, time] = Cascaded_BEAR(Y_res, args)
 

@@ -12,9 +12,10 @@ def Cascaded_BEAR(data: torch.Tensor, args: argparse.Namespace):
     device = args.device
 
     sparsity = args.sparsity
+    k = args.k
 
     model = BEAR_WWTY(data.size(1), k=1).to(device)
-    second_model = BEAR_WWTY(data.size(1), k=8).to(device)
+    second_model = BEAR_WWTY(data.size(1), k=k).to(device)
 
     second_model.clamper()
 

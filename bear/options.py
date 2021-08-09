@@ -68,6 +68,8 @@ def parse(mode=None):
         # For Cascaded BEAR
         ap.add_argument('--sparsity', type=float, default=3,
                         help='sparsity weight for first BEAR of cascaded BEAR')
+        ap.add_argument('--k', type=int, default=8,
+                        help='number of spatial & temporal components for cascaded BEAR')
     else:
         raise AssertionError
 
