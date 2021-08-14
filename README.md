@@ -6,7 +6,7 @@
 </p>
 <h6 align="center">Demo videos acquired using BEAR. Input video, low-rank component, and sparse component from left to right.</h6>
 
-Official source codes for "Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data", [arXiv](https://arxiv.org/abs/2108.01665).
+Official source codes for "Efficient neural network approximation of robust PCA for automated analysis of calcium imaging data", [arXiv](https://arxiv.org/abs/2108.01665)  [[1]](#ref).
 
 There is also **[Matlab implementation](https://drive.google.com/file/d/1PqAhtM9712tQme_vP5GvJ6mSWoogbxRF/view?usp=sharing) (~16MB) of BEAR.**
 
@@ -89,6 +89,7 @@ Can be observed that loss value does not decrease actually after small number of
 You can reduce the `args.epoch` if you want.
 
 ## Citation
+<a name="ref"></a>
 ```markdown
 @article{han2021efficient,
   archivePrefix = {arXiv},
