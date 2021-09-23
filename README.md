@@ -91,12 +91,14 @@ You can reduce the `args.epoch` if you want.
 ## Citation
 <a name="ref"></a>
 ```markdown
-@article{han2021efficient,
-  archivePrefix = {arXiv},
-  arxivId = {2108.01665},
-  title={Efficient Neural Network Approximation of Robust PCA for Automated Analysis of Calcium Imaging Data},
-  author={Han, Seungjae and Cho, Eun-Seo and Park, Inkyu and Shin, Kijung and Yoon, Young-Gyu},
-  journal={arXiv preprint arXiv:2108.01665},
-  year={2021},
+@InProceedings{han2021efficient,
+author="Han, Seungjae and Cho, Eun-Seo and Park, Inkyu and Shin, Kijung and Yoon, Young-Gyu",
+title="Efficient Neural Network Approximation of Robust PCA for Automated Analysis of Calcium Imaging Data",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2021",
+year="2021",
+publisher="Springer International Publishing",
+address="Cham",
+pages="595--604",
+url="https://link.springer.com/chapter/10.1007%2F978-3-030-87234-2_56"
 }
 ```
