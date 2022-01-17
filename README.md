@@ -89,6 +89,8 @@ Can be observed that loss value does not decrease actually after small number of
 You can reduce the `args.epoch` if you want.
 
 ## Citation
+If you find this repository or our paper helpful, please cite our paper:
+
 <a name="ref"></a>
 ```markdown
 @InProceedings{han2021efficient,
