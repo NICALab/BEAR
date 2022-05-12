@@ -33,7 +33,7 @@ python scripts/run_BEAR.py --D hall --d True
 python scripts/run_BEAR.py --D demoMovie --d True
 ```
 
-Also you can download **additional** calcium imaging data of zebrafish in this [Google Drive](https://drive.google.com/file/d/1gQRJzk5rR5TRYc5O_zZDsuXRK6tAEBPZ/view?usp=sharing) (~25MB). If you want to see more examples, try these. Download, unzip, and move .tif and .mat files inside the `data` folder. Then, you can try BEAR with as follows:
+Also you can download **additional** calcium imaging data of zebrafish in this [Google Drive](https://drive.google.com/file/d/1cpr2Aof_auegMZolCalLZp26hMmQiNVI/view?usp=sharing) (~25MB). If you want to see more examples, try these. Download, unzip, and move .tif and .mat files inside the `data` folder. Then, you can try BEAR with as follows:
 ```bash
 python scripts/run_BEAR.py --D confocal_zebrafish --d True
 python scripts/run_BEAR.py --D confocal_zebrafish_2 --d True
