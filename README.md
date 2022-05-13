@@ -93,14 +93,12 @@ If you find this repository or our paper helpful, please cite our paper:
 
 <a name="ref"></a>
 ```markdown
-@InProceedings{han2021efficient,
-author="Han, Seungjae and Cho, Eun-Seo and Park, Inkyu and Shin, Kijung and Yoon, Young-Gyu",
-title="Efficient Neural Network Approximation of Robust PCA for Automated Analysis of Calcium Imaging Data",
-booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2021",
-year="2021",
-publisher="Springer International Publishing",
-address="Cham",
-pages="595--604",
-url="https://link.springer.com/chapter/10.1007%2F978-3-030-87234-2_56"
+@inproceedings{han2021efficient,
+  title={Efficient neural network approximation of robust pca for automated analysis of calcium imaging data},
+  author={Han, Seungjae and Cho, Eun-Seo and Park, Inkyu and Shin, Kijung and Yoon, Young-Gyu},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={595--604},
+  year={2021},
+  organization={Springer}
 }
 ```
